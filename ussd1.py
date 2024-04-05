@@ -4,9 +4,9 @@ from twilio.rest import Client
 import datetime
 
 # Twilio credentials
-account_sid = 'AC9200c3e6c03f20b4096087f0e342bc3e'
-auth_token = '5c90ff1117c094719b8442ecf5633875'
-twilio_number = '+16096421055'
+account_sid = ''
+auth_token = ''
+twilio_number = ''
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -58,7 +58,7 @@ def send_initial_prompt():
             client.messages.create(
                 body="Welcome! Please reply with your desired appointment date and time.",
                 from_=twilio_number,
-                to=+919591141007
+                to=
             )
 
 if __name__ == '__main__':
